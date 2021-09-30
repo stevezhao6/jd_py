@@ -44,7 +44,7 @@ def parse_product():
 
         print(product_shop_name,product_price,product_comment,product_shop_name)
 
-        with open('data_jd.csv',mode='a',encoding='utf-8',newline='') as f:
+        with open('data_jd.csv', mode='a', encoding='utf-8', newline='') as f:
             csv_write = csv.writer(f)
             csv_write.writerow([product_name,product_price,product_name,product_shop_name])
       except Exception as e:
